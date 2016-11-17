@@ -1,0 +1,14 @@
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\bin\Release\CurrencyConverter.exe.config
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\MainWindow.g.cs
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\App.g.cs
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter_MarkupCompile.cache
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter_MarkupCompile.lref
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\App.baml
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\MainWindow.baml
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter.g.resources
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter.pdb
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\bin\Release\CurrencyConverter.exe
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\bin\Release\CurrencyConverter.pdb
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter.Properties.Resources.resources
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\currencyconvertor2go.csproj.GenerateResource.Cache
+E:\My Work's\Jukh\CurrencyConvertor\CurrencyConverter\CurrencyConverter\obj\Release\CurrencyConverter.exe

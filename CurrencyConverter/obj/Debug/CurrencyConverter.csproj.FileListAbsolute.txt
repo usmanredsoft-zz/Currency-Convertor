@@ -1,0 +1,14 @@
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.exe.config
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.exe
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.pdb
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\MainWindow.g.cs
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\App.g.cs
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter_MarkupCompile.cache
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter_MarkupCompile.lref
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\MainWindow.baml
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.g.resources
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.Properties.Resources.resources
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.exe
+D:\Work\usmanredsoft\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.pdb

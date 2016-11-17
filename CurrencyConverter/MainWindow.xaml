@@ -1,0 +1,376 @@
+﻿<Window x:Class="currencyconvertor2go.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConverter"
+        mc:Ignorable="d"
+        Title="CurrencyConvertor2go" Icon="image/icon.ico" MinHeight="500" MinWidth="550" 
+        Background="#82a846" ResizeMode="CanResize" IsHitTestVisible="True" SizeChanged="Window_SizeChanged"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="1.5*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="30,10,30,3" HorizontalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Image Source="image/logo.png">
+                    </Image>
+                </Grid>
+                <Grid Grid.Column="1" HorizontalAlignment="Stretch">
+                    <Image  Margin="10,0,0,0"  Name="webBrowser1" MouseDown="webBrowser1_MouseDown" />
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="1" Height="auto" Width="auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="30,5, 30,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="281*"/>
+                <ColumnDefinition Width="104*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="1" Name="btnEur" Style="{DynamicResource RoundCorner}" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,3,3" Click="Button_Click_16">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/eurflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="3*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtEurValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                                <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="2">
+                                            <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtEurDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                 
+                            </Grid>
+
+
+
+                    </Button>
+                    <Button Grid.Row="2" Name="btnJpy" Style="{DynamicResource RoundCorner}" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,3,3" Click="Button_Click_17">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/jpyflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="3*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtJpyValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="2">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtJpyDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+           
+                            </Grid>
+
+
+                    </Button>
+                    <Button Grid.Row="3" Name="btnGbp" Style="{DynamicResource RoundCorner}" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,3,3" Click="Button_Click_18">
+
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/gbpflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="3*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtGbpValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="2">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtGbpDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+              
+                            </Grid>
+
+                    </Button>
+                    <Button Grid.Row="0" Name="btnUsd" Style="{DynamicResource RoundCorner}" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,3,3" Click="Button_Click_15">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/usflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="3*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtUsdValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="2">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtUsdDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                
+                            </Grid>
+
+                    </Button>
+                    <Button Grid.Row="4" Name="btnAud" Style="{DynamicResource RoundCorner}" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,0,3" Click="Button_Click_19">
+
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/audflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="3*" />
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtAudValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="1">
+                                            <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                                <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                        <Grid Grid.Row="2">
+                                            <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtAudDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                            </Viewbox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                     
+                            </Grid>
+                    </Button>
+                    
+                    <Button Grid.Row="5" Name="btnCad" Style="{DynamicResource RoundCorner}" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent"  Margin="3,3,3,3" Click="Button_Click_20">
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="40" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="5">
+                                    <Image Source="Image/cadflag.png" Stretch="Uniform"></Image>
+                                </Grid>
+                                <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,300,0">
+                                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="3*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="1*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                            <Viewbox  Stretch="UniformToFill" HorizontalAlignment="Left">
+                                                <TextBlock Name="txtCadValue" HorizontalAlignment="Left" Margin="0,0,0,0" FontWeight="Bold"  Foreground="Red">$100</TextBlock>
+                                            </Viewbox>
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                            <TextBlock Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Italic" Foreground="Green" FontWeight="SemiBold"  >USD - US Doller</TextBlock>
+                                        </Viewbox>
+                                    </Grid>
+                                    <Grid Grid.Row="2">
+                                        <Viewbox  Stretch="Uniform" HorizontalAlignment="Left">
+                                            <TextBlock Name="txtCadDescription" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" >"FROM" CURRENCY</TextBlock>
+                                        </Viewbox>
+                                    </Grid>
+                                    </Grid>
+                                </Grid>
+                  
+                            </Grid>
+                    </Button>
+                </Grid>
+
+                <Grid Grid.Column="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="0" BorderBrush="Yellow" CornerRadius="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="3,3,3,3">
+
+                        <Grid>
+
+                            <!-- Rounded mask (stretches to fill Grid) -->
+                            <Border Name="mask" Background="Gray" CornerRadius="7"/>
+
+                            <!-- Main content container -->
+                            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="3,3,3,3">
+                                
+
+                                <!-- Any content -->
+
+                                <Grid Margin="5,5,5,5"  HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="2.8*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0" Margin="3,3,3,7" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Transparent">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="1.4*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                                            <Image Name="imgMainflag" Margin="3,3,3,3" Stretch="Uniform"  Source="Image/usflag.png"></Image>
+                                        </Grid>
+                                        <Grid Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                                            <TextBlock Name="txtMainCurrency" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Wheat">USD</TextBlock>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+                                        <TextBox Name="txtCurrency" Margin="3,3,7,3" Background="Transparent" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Bold" TextChanged="txtCurrency_TextChanged">100</TextBox>
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Border>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Style="{DynamicResource CButton}" Grid.Row="0" Margin="5,5,5,5" Foreground="White" FontSize="30" Click="Button_Click_1">C</Button>
+                        <Button Grid.Column="1" Style="{DynamicResource XButton}" Grid.Row="0" Margin="5,5,5,5" Foreground="White" FontSize="30" Click="Button_Click_2">X</Button>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                        </Grid.RowDefinitions>
+                        <Button Grid.Column="0" Style="{DynamicResource DigitButton}" Grid.Row="0" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_3">7</Button>
+                        <Button Grid.Column="1" Style="{DynamicResource DigitButton}" Grid.Row="0" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_4">8</Button>
+                        <Button Grid.Column="2" Style="{DynamicResource DigitButton}" Grid.Row="0" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_5">9</Button>
+                        <Button Grid.Column="0" Style="{DynamicResource DigitButton}" Grid.Row="1" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_6">4</Button>
+                        <Button Grid.Column="1" Style="{DynamicResource DigitButton}" Grid.Row="1" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_7">5</Button>
+                        <Button Grid.Column="2" Style="{DynamicResource DigitButton}" Grid.Row="1" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_8">6</Button>
+                        <Button Grid.Column="0" Style="{DynamicResource DigitButton}" Grid.Row="2" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_9">1</Button>
+                        <Button Grid.Column="1" Style="{DynamicResource DigitButton}" Grid.Row="2" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_10">2</Button>
+                        <Button Grid.Column="2" Style="{DynamicResource DigitButton}" Grid.Row="2" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_11">3</Button>
+                        <Button Grid.Column="0" Style="{DynamicResource DigitButton}" Grid.Row="3" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_12">0</Button>
+                        <Button Grid.Column="1" Style="{DynamicResource DigitButton}" Grid.Row="3" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_13">00</Button>
+                        <Button Grid.Column="2" Style="{DynamicResource DigitButton}" Grid.Row="3" Margin="3,3,3,3" Foreground="White" FontSize="30" Click="Button_Click_14">.</Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="2" HorizontalAlignment="Stretch">
+            <Image Margin="30,3,30,10" Name="webimage2"  MouseDown="webimage2_MouseDown"></Image>
+        </Grid>
+    </Grid>
+</Window>
